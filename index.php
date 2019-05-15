@@ -5,15 +5,15 @@
  </head>
  <body>
  <div class="jumbotron">
- <h1>Register here!</h1>
- <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
+ <h1 class="text-center">Register here!</h1>
+ <p class="text-center">Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
   </div>
   <div class="container">
  <form method="post" action="index.php" enctype="multipart/form-data" >
        Name  <input class="form-control" type="text" name="name" id="name"/></br></br>
        Email <input class="form-control" type="text" name="email" id="email"/></br></br>
        Job <input class="form-control" type="text" name="job" id="job"/></br></br>
-       <input class="form-control btn-success" type="submit" name="submit" value="Submit" />
+       <input class="form-control btn-success mb-5" type="submit" name="submit" value="Submit" />
        <input class="form-control btn-outline-danger" type="submit" name="load_data" value="Load Data" />
  </form>
 </div>
