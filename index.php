@@ -16,7 +16,7 @@
        <input class="form-control btn-success mb-5" type="submit" name="submit" value="Submit" />
        <input class="form-control btn-outline-danger" type="submit" name="load_data" value="Load Data" />
  </form>
-</div>
+
  <?php
     $host = "iwanserver.database.windows.net";
     $user = "iwan";
@@ -49,19 +49,19 @@
             echo "Failed: " . $e;
         }
 
-        echo "<h3>Your're registered!</h3>";
+        echo "<h3 class='text-center'>Your're registered!</h3>";
     } else if (isset($_POST['load_data'])) {
         try {
             $sql_select = "SELECT * FROM Registration";
             $stmt = $conn->query($sql_select);
             $registrants = $stmt->fetchAll(); 
             if(count($registrants) > 0) {
-                echo "<h2>People who are registered:</h2>";
-                echo "<table>";
-                echo "<tr><th>Name</th>";
+                echo "<h2 class='text-center'>People who are registered:</h2>";
+                echo "<table class='table'>";
+                echo "<thead><th>Name</th>";
                 echo "<th>Email</th>";
                 echo "<th>Job</th>";
-                echo "<th>Date</th></tr>";
+                echo "<th>Date</th></thead>";
                 foreach($registrants as $registrant) {
                     echo "<tr><td>".$registrant['name']."</td>";
                     echo "<td>".$registrant['email']."</td>";
@@ -77,5 +77,6 @@
         }
     }
  ?>
+</div>
  </body>
  </html>
