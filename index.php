@@ -1,6 +1,7 @@
 <html>
  <head>
  <Title>Registration Form</Title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
  <style type="text/css">
  	body { background-color: #fff; border-top: solid 10px #000;
  	    color: #333; font-size: .85em; margin: 20; padding: 20;
