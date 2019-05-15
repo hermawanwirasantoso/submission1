@@ -4,8 +4,11 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
  </head>
  <body>
+ <div class="jumbotron">
  <h1>Register here!</h1>
  <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
+  </div>
+  <div class="container">
  <form method="post" action="index.php" enctype="multipart/form-data" >
        Name  <input class="form-control" type="text" name="name" id="name"/></br></br>
        Email <input class="form-control" type="text" name="email" id="email"/></br></br>
@@ -13,6 +16,7 @@
        <input class="form-control btn-success" type="submit" name="submit" value="Submit" />
        <input class="form-control btn-outline-danger" type="submit" name="load_data" value="Load Data" />
  </form>
+</div>
  <?php
     $host = "iwanserver.database.windows.net";
     $user = "iwan";
